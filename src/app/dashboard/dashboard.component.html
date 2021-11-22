@@ -1,0 +1,20 @@
+<div>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let student of students">
+      <td><span>{{student.id}}</span></td>
+      <td><span>{{student.name}}</span></td>
+      <td><span>{{student.email}}</span></td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <button type="submit" class="btn btn-info" routerLink="/">Register</button>
+</div>
