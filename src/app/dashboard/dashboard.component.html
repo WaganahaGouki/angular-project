@@ -9,9 +9,16 @@
     </thead>
     <tbody>
     <tr *ngFor="let student of students">
-      <td><span>{{student.id}}</span></td>
+      <td>
+        <span>
+
+          {{student.id}}
+        </span>
+      </td>
       <td><span>{{student.name}}</span></td>
       <td><span>{{student.email}}</span></td>
+      <td><span><button type="submit" class="btn btn-danger" (click)="deleteStudent(student)">Delete</button></span></td>
+
     </tr>
     </tbody>
   </table>

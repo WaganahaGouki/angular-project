@@ -34,4 +34,13 @@ export class DashboardComponent implements OnInit {
       }
     )
   }
+
+  deleteStudent(student: Student){
+    let url = 'http://localhost:8080/api/v1/student/' + student.id
+    this.httpClient.delete(url).subscribe(
+      (result) => {
+        this.ngOnInit()
+      }
+    )
+  }
 }
